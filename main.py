@@ -36,7 +36,7 @@ def file_in():
         data = wf.read(160)
         data = ns.process(data)
         player.write(data)
-        time.sleep(.001)
+        time.sleep(1)
 
 
 if __name__ == '__main__':
