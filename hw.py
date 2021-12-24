@@ -22,6 +22,7 @@ def player():
     stream = p.open(format=pyaudio.paInt16,
                     channels=1,
                     rate=16000,
+                    frames_per_buffer=4096,
                     output=True)
     return stream
 
